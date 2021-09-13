@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Calculated
+{% endblock %}
+
+{% block main %}
+<!--these actions will emit x amount of carbon-->
+    <p>
+        These actions would result in a carbon footprint of {{ carbon }} kg.
+    </p>
+    <p>
+        {{ food }} kg of these carbon emissions would come from food.
+    </p>
+    
+{% endblock %}

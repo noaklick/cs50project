@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+
+            <img src= {{ filename }} alt="Graph">
+
+            <h2><br>History</h2>
+<!--loop through database of user's entries and display in table-->
+                <table = class = "table">
+                  <thead class="thead-dark">
+                        <tr>
+                            <th>   Date  </th>
+                            <th>   Total Carbon (in kg)  </th>
+                            <th>   Carbon from Food (in kg) </th>
+                            <th>   Minutes in Shower  </th>
+                            <th>   Miles Driven  </th>
+                            <th>   Total Hours of Light  </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- TODO: Loop through the database entries to display them in this table -->
+                        {% for day in history %} <!-- stock is a dict in the list stocks-->
+                        <tr>
+                            <td>
+                                {{ day.date }}
+                            </td>
+                            <td>
+                                {{ day.total_carbon }}
+                            </td>
+                            <td>
+                                {{ day.food_carbon }}
+                            </td>
+                            <td>
+                                {{ day.shower_min }}
+                            </td>
+                            <td>
+                                {{ day.driving_miles }}
+                            </td>
+                            <td>
+                                {{ day.light_hours }}
+                            </td>
+
+                        </tr>
+
+                        {% endfor %}
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+{% endblock %}

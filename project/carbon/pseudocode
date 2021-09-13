@@ -1,0 +1,161 @@
+5 (foot)Steps to Reduce your Carbon Footprint
+
+A website that lets you track your carbon-emitting activites daily and see a log of your progress.
+
+## In a paragraph or more, detail your project. What will your software do? What features will it have? How will it be executed?
+
+Users can make an account with a password.
+They will answer five questions each day about their carbon footprint.
+We will send them an email each day to remember to log their info.
+They can see a log of their inputs as well as graphs to track their stats over time.
+If we have time, we will make personalized recommendations as to how to improve their carbon footprint.
+If we really have time, we can a point system where they get points and rewards for tracking and improving.
+If we REALLY have time, we can make it a social media platform where people can compete with their friends to produce the smallest carbon footprint.
+
+
+## In the world of software, most everything takes longer to implement than you expect. And so it's not uncommon to accomplish less in a fixed amount of time than you hope.
+
+### In a sentence (or list of features), define a GOOD outcome for your final project. I.e., what WILL you accomplish no matter what?
+
+Users can make an account with a password.
+They will answer five questions each day about their carbon footprint.
+We will send them an email each day to remember to log their info.
+They can see a log of their inputs as well as graphs to track their stats over time.
+
+### In a sentence (or list of features), define a BETTER outcome for your final project. I.e., what do you THINK you can accomplish before the final project's deadline?
+
+If we have time, we will make personalized recommendations as to how to improve their carbon footprint.
+If we really have time, we can a point system where they get points and rewards for tracking and improving.
+
+### In a sentence (or list of features), define a BEST outcome for your final project. I.e., what do you HOPE to accomplish before the final project's deadline?
+
+If we REALLY have time, we can make it a social media platform where people can compete with their friends to produce the smallest carbon footprint.
+
+## In a paragraph or more, outline your next steps. What new skills will you need to acquire? What topics will you need to research? If working with one of two classmates, who will do what?
+
+Make a flask website, give it user login and password features, build survey, create SQL database to store responses, build log of responses, build graphs of stats.
+We will do everything together! We will try to learn how to do use python's built-in data visualization libraries, such as pandas and seaborn.
+We will also learn about carbon footprints!
+We will  need to learn how to convert sql files into csv files that are automatically implemented into data visualizations for the user.
+
+
+Users can make an account with a password.
+They will answer five questions each day about their carbon footprint.
+We will send them an email each day to remember to log their info.
+They can see a log of their inputs as well as graphs to track their stats over time.
+If we have time, we will make personalized recommendations as to how to improve their carbon footprint.
+If we really have time, we can a point system where they get points and rewards for tracking and improving.
+If we REALLY have time, we can make it a social media platform where people can compete with their friends to produce the smallest carbon footprint.
+
+
+BUILD OUT PAGES
+apology
+
+welcome page with info about what the site does
+    look up how much carbon an action will emit
+    register page
+    login page
+        page to ask carbon qs (survey)
+        page to view your history/graphs (maybe recommendations of what to do)
+
+BEHIND THE SCENES
+sql database to store in
+send daily reminder emails
+google how to calculate carbon footprint
+
+STYLE
+styles.css
+layout.html
+
+Carbon footprint info:
+driving:
+.12 kg per mile driven
+
+food:
+food in db
+
+lights:
+.1 kg per hour per room
+
+hot water shower:
+2.1 gallons per minute
+.036kg per min shower
+
+
+
+sql:
+tables:
+users
+    id
+    username
+    hash password
+data
+    id
+    timestamp
+    user_id
+    total_carbon
+    food_carbon
+    shower_min
+    driving_miles
+    light_hours
+
+for each user for each day:
+store date
+each survey answer
+calculated carbon emission
+
+today:
+set up sql
+welcome
+start log
+status report
+
+division of labor:
+styles.css ben
+layout.html ben
+welcome.html ben
+survey pseudocode ben CHECK
+apology/error checker ben
+score based on carbon emissions ben CHECK
+fix design of log.html ben
+
+log.html and its python noa
+history.html and its python noa
+verify email is valid noa CHECK
+calculate.html and its python noa
+calculated.html noa
+
+
+noa wednesday:
+insert into data log submissions
+calculate carbon footprint
+do calculated.html and calculate.html
+THEN work on history
+
+
+SAVING THE OLD FORM
+<div class="form-group">
+        <input type="checkbox" name="beef">
+        <label for="beef">Beef</label><br>
+
+        <input type="checkbox" name="lamb">
+        <label for="lamb">Lamb</label><br>
+
+        <input type="checkbox" name="turkey">
+        <label for="Turkey">Turkey</label><br>
+
+        <input type="checkbox" name="tuna">
+        <label for="tuna">Tuna</label><br>
+
+        <input type="checkbox" name="chicken">
+        <label for="chicken">Chicken</label><br>
+
+        <input type="checkbox" name="cheese">
+        <label for="cheese">Cheese</label><br>
+
+        <input type="checkbox" name="pork">
+        <label for="pork">Pork</label><br>
+
+        <input type="checkbox" name="n/a">
+        <label for="n/a"> I did not eat any of these foods.</label>
+        </div>

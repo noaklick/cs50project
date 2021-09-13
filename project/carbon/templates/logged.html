@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Logged
+{% endblock %}
+
+{% block main %}
+<!--these actions will emit x amount of carbon-->
+    <p>
+        Your carbon footprint today is {{ carbon }} kg.
+    </p>
+    <p>
+         {{ food }} kg of your carbon emissions came from food.
+    </p>
+    <div>
+        <p><a class="btn btn-lg btn-secondary" href="/history" role="button">Check your progress!</a></p>
+    </div>
+{% endblock %}

@@ -1,0 +1,41 @@
+Carbon footprint info:
+driving:
+.12 kg per mile driven
+
+food:
+food in db
+
+lights:
+.1 kg per hour per room
+
+hot water shower:
+2.1 gallons per minute
+.036kg per min shower
+
+driving:
+input (type in miles driven)
+output input * .12 = kg of CO2 produced
+store kg in db in driving column for the day
+
+food:
+carbon emissions
+input (checklist for list of 7 foods in food.)
+input number of portions of each food
+query database for corresponding carbon weight for each food
+multiply (weight * number of portions) if more than one portion
+add up total weight
+output total weight
+
+lights:
+input number of rooms
+input hours of lights used
+output (hours * rooms * .1)
+
+hot water shower:
+input minutes in shower:
+output (input * .036)
+
+
+
+
+

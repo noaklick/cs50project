@@ -1,0 +1,92 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Calculate
+{% endblock %}
+
+{% block main %}
+<!--Survey!!! -->
+<body class = "bg-light">
+        <div class="container">
+<div class="py-5 text-center">
+    <img src = "https://static1.squarespace.com/static/5a202c72f14aa1b6c3085476/5a295a6941920296527f2069/5bccb5b171c10b1282763f95/1540234560633/dreamstime_m_99690329.jpg" style="width:400px;height:250px;">
+    <h2>Carbon Footprint Calculator</h2>
+    <p class="lead">Answer each of the following questions about your activites! Input is required for all.</p>
+  </div>
+
+
+<form action="/calculate" method="post">
+    <div class="container">
+     <div class="row">
+      <div class = "col-sm">
+        <div>
+            How many miles did you drive?
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" class="form-control" name="drive" placeholder="Miles" type="number" min="0" required>
+        </div>
+         <div>
+            How long was your hot shower?
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" class="form-control" name="shower" placeholder="Minutes" type="number" min="0" required>
+        </div>
+      </div>
+
+      <div class = "col-sm">
+           <div>
+            How many hours did you have the lights on?
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" class="form-control" name="light" placeholder="Hours" type="number" min="0" required>
+        </div>
+
+        <div>
+            In how many rooms had the lights on?
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" class="form-control" name="rooms" placeholder="Rooms" type="number" min="0" required>
+        </div>
+      </div>
+
+
+     <div class = "col-sm">
+         <div>
+           How many portions of the following foods did you eat?
+        </div>
+        <div class="form-group">
+        <label for="beef">Beef </label>
+        <input autocomplete="off" class="form-control" name="beef" type="number" min="0" required> <br>
+
+        <label for="lamb">Lamb</label>
+        <input autocomplete="off" class="form-control" name="lamb" type="number" min="0" required> <br>
+
+        <label for="Turkey">Turkey</label>
+        <input autocomplete="off" class="form-control" name="turkey" type="number" min="0" required> <br>
+
+        <label for="tuna">Tuna</label>
+        <input autocomplete="off" class="form-control" name="tuna" type="number" min="0" required> <br>
+
+        <label for="chicken">Chicken</label>
+        <input autocomplete="off" class="form-control" name="chicken" type="number" min="0" required> <br>
+
+        <label for="cheese">Cheese</label>
+        <input autocomplete="off" class="form-control" name="cheese" type="number" min="0" required> <br>
+
+        <label for="pork">Pork</label>
+        <input autocomplete="off" class="form-control" name="pork" type="number" min="0" required> <br>
+
+     </div>
+
+        </div>
+        <button class="btn btn-secondary btn-lg btn-block" type="submit">Calculate</button>
+    </form>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+        <script src="form-validation.js"></script></body>
+
+</div>
+</body>
+
+{% endblock %}

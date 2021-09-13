@@ -1,0 +1,10 @@
+cs50
+Flask
+Flask-Session
+requests
+os
+tempfile
+werzkeug
+email_validator
+flask_mail
+matplotlib
